@@ -1,5 +1,5 @@
 ## The proxy is getting very sus
-*Fixed on: 12/06/2026*
+*Fixed on: 12/05/2026*
 
 [Website](https://galaxybot.app) | [Discord](https://galaxybot.app/go/discord)
 
