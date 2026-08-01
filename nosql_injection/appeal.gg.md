@@ -46,7 +46,7 @@ I firstly putted something strange on `formId` like `{"$abc":123}`, and the serv
 }
 ```
 
-So, I get error messages and i'm injecting NoSQL operators, good. Now, watching the MongoDB, I saw the [$expr](https://www.mongodb.com/docs/manual/reference/operator/query/expr/) predicate operator:
+So, I get error messages and i'm injecting NoSQL operators, good. Now, watching the MongoDB docs, I saw the [$expr](https://www.mongodb.com/docs/manual/reference/operator/query/expr/) predicate operator:
 
 > Syntax: `{ $expr: { <expression> } }`
 >
