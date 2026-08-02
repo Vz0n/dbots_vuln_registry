@@ -49,13 +49,13 @@ I tried to play with the `reactions[n].emoji` field and I saw that adding an `/@
 
 I tried to go back to the API root with `../../../../../` and try to pin a message, but I got a catch... there was a 60 characters limit.
 
-The `../../../../../` are already 15 characters. An snowflake already takes $[18,19]$ characters, and the words like `channels` and `messages` takes $8$ and $7$ characters, so if we assume that everything is maximized. Doing basic math gives $2(19) + 15 + 8 + 7 = 68$ (multiply by two as we need to put two snowflakes)
+The `../../../../../` are already 15 characters. An snowflake already takes $[18,19]$ characters, and the words `channels` and `messages` takes $2*8 = 16$ characters, so if we assume that everything is maximized we have $2(19) + 15 + 16 = 69$ (multiply by two as we need to put two snowflakes)
 
-There is a deprecated endpoint to pin messages (`/channels/{channel.id}/pins/{message.id}`). With that we take away $7$ characters from the value (the word `messages`), and as we are on channels already, we can remove a `../` and the `channels` word, so we remove $11$ characters and, $2(19) + 4 = 42$
+There is a deprecated endpoint to pin messages (`/channels/{channel.id}/pins/{message.id}`). With that we take away $8$ characters from the value (the word `messages`), and as we are on channels already, we can remove a `../` and the `channels` word, so we remove $11$ characters and, $2(19) + 4 = 42$
 
 ![Pinned message](assets/maki2.png)
 
-Good, but we can't give roles ourselves as the url is too large (three snowflakes, `guilds`, `members`, `roles`: $3x + 6 + 7 + 5 \geq 60$). Nonetheless I noticed something, and it was that the backend removes the previous emoji if it was modified, even if Maki didn't was able to create the reaction; you can put something like `aadasd` and firstly it will throw a `500 Internal Server Error`, but after that it will go ok, and if you modify it, it will throw the error again, in summary the server was doing this:
+Good, but we can't give roles ourselves as the url is too large (three snowflakes, `guilds`, `members`, `roles`: $3x + 6 + 7 + 5 \geq 60$). Nonetheless I noticed something, and it was that the backend removes the previous emoji if it was modified, even if Maki was not able to create the reaction; you can put something like `aadasd` and firstly it will throw a `500 Internal Server Error`, but after that it will go ok, and if you modify it, it will throw the error again, in summary the server was doing this:
 
 ![Decission diagram](assets/maki3.png)
 
