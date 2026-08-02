@@ -28,7 +28,7 @@ When you create a reaction role, this was sent via `POST` to `/api/v1/mongo/role
 }
 ```
 
-And this via `POST` to `/api/v1/mongo/giveaways?guildId=<Snowflake>&giveawayId=<UUID>&tz=<Timezone>`
+And this via `POST` to `/api/v1/mongo/giveaways?guildId=<Snowflake>&giveawayId=<UUID>&tz=<Timezone>` when you create a giveaway:
 
 ```jsonc
 {
