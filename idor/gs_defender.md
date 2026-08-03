@@ -1,7 +1,7 @@
 ## The spam button
 *Fixed on: 28/07/2026*
 
-[Website](https://defender.gamersafer.systems/) | [Discord](https://discord.com/invite/rwybDrg)
+[Website](https://defender.gamersafer.systems/) | [Discord](https://discord.gg/Ez9aQYccDH)
 
 This is a small security bot made by the GamerSafer organization (a well known Mojang/Microsoft partner, as it seems). It has some interesting functions beyond basic anti-raid/security stuff like age/identity document verification.
 
