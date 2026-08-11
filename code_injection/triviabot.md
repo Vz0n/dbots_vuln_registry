@@ -1,4 +1,4 @@
-## std::quote has a good opsec
+## std::quoted has a good opsec
 *Fixed on: 04/08/2026*
 
 > Of all vulnerabilities on this repo, this is part of the most interesting ones.
