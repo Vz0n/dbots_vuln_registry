@@ -3,7 +3,7 @@
 
 [Website](https://wispbyte.com) | [Discord](https://www.wispbyte.com/discord)
 
-WispByte is a hosting platform mainly designed for Discord bots, but it also supports hosting other things like Minecraft servers. It has free and premium plans.
+WispByte is a hosting platform mainly designed for Discord bots, but it also supports hosting other things like Minecraft servers. It has free and paid services.
 
 ![Portal](assets/wispbyte1.png)
 

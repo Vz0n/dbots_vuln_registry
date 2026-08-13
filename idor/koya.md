@@ -3,7 +3,7 @@
 
 [Website](https://koya.gg) | [Discord](https://discord.gg/koya)
 
-Koya is a multipurpose bot which bases it's thematic on the One Piece anime (I mean, the bot pfp is Luffy). It has various function and as I see, one of the most used is the Welcome/Goodbye.
+Koya is a One Piece themed multipurpose bot (I mean, the bot pfp is Luffy). It has various function and as I saw, one of the most used is the Welcome/Goodbye.
 
 This bot has a message builder, it's for creating custom messages with/without embeds to use them as templates.
 
