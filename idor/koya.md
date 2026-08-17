@@ -1,5 +1,5 @@
-## I'm testing messages on your channel, sorry but no sorry!
-*Fixed on: 15/04/2024*
+## I'm testing messages on your channels, sorry but no sorry!
+*Fixed on: 15/04/2024 - 13/08/2026*
 
 [Website](https://koya.gg) | [Discord](https://discord.gg/koya)
 
@@ -9,14 +9,14 @@ This bot has a message builder, it's for creating custom messages with/without e
 
 ![Message builder](assets/koya1.png)
 
-To send the message, a request to `/api/guilds/:guild_id/messagebuilder` is sent:
+To send the message, a request to `/api/guilds/[guild_id]/messagebuilder` is sent:
 
 ```json
 {
     "_id":"",
-    "name":"test",
-    "channelId":":channel_id",
-    "content":"test123",
+    "name":"<String>",
+    "channelId":"<Snowflake>",
+    "content":"<String>",
     "status":"draft",
     "embeds":[
         {
@@ -41,3 +41,32 @@ The `channelId` parameter was not verified to make sure that the channel belongs
 ![Everyone](assets/koya2.png)
 
 I reported it to the dev, and he fixed it quickly.
+
+Two years later, I decided to look again at the bot. There is a birthday module that lets configure the bot to announce birthdays at a specific hour.
+
+![Birthdays](assets/koya3.png)
+
+When you save settings, this is sent to `POST /api/guilds/[guild_id]/birthdays`:
+
+```json
+{
+    "enabled":"<Boolean>",
+    "channelId":"<Snowflake>",
+    "roleId":"<Snowflake>",
+    "message":"<String>",
+    "messageWithAge":"",
+    "hour":"<Number>",
+    "allowYear":"<Boolean>",
+    "requireYear":"<Boolean>",
+    "autoCleanupAnnouncements":"<Boolean>",
+    "formId":"config"
+}
+```
+
+Welp again, the `channelId` field had snowflake validation but not channel specific checks. I putted a channel from another guild, set my birthday to the next day at some hour and... the bot sent the birthday message there.
+
+https://github.com/user-attachments/assets/042c7fed-c71d-45db-b091-8ad8937f9394
+
+On this one I wasn't able to ping @everyone, as you can see in the video. Probably because the bot was sanitizing things in that message.
+
+As the first, the dev fixed it quickly.
