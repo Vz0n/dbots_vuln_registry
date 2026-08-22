@@ -43,7 +43,7 @@ For some reason, it only encodes the emoji if there isn't something already URL 
 
 ```json
 {
-    "message":"Delete reaction: 302 Found on /api/v10/..[snip]/reactions/./xd/@me#%E2%9D%A4%EF%B8%8F"
+    "message":"Delete reaction: 302 Found on DELETE /api/v10/..[snip]/reactions/./xd/@me#%E2%9D%A4%EF%B8%8F"
 }
 ```
 
