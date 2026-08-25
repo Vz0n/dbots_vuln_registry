@@ -61,11 +61,16 @@ Good, but we can't give roles ourselves as the url is too large (three snowflake
 
 I can also control the path of the `DELETE` request, so by reviewing lengths, I could do this (note that $x$ is the ID length and the other number is the total path length without counting the snowflake):
 
-- Make the bot leave a guild, `../../../../../users/@me/guilds/{guild.id}#` ($x + 32 \leq 52$)
-- Delete channels, `../../../../{channel.id}#` ($x + 12 \leq 32$)
+- Make the bot leave a guild, `../../../../../users/@me/guilds/{guild.id}#` ($x + 33 \leq 52$)
+- Delete channels, `../../../../{channel.id}#` ($x + 13 \leq 32$)
 - Unpin messages (the same as pinning a message)
-- Delete messages, `../../../../{channel.id}/messages/{message.id}#` ($x + 22 \leq 60$ only if the channel or the message was created before 2022)
-- Delete invites, `../../../../../invites/{invite.id}#` ($x + 23 \leq 49$)
+- Delete messages, `../../../../{channel.id}/messages/{message.id}#` ($x + y + 23 \leq 60$ only if the channel $x$ or the message $y$ was created before 2022)
+- Delete invites, `../../../../../invites/{invite.id}#` ($x + 24 \leq 49$)
+- Delete application assets, `../../../../../applications/{application.id}/assets/{asset.key}#` ($x + y + 35 \leq 60$ only if the asset $y$ key has 4 characters or less)
+- Delete forum tags, `../../../../{channel.id}/tags/{tag.id}#` ($x + y + 19 \leq 57$)
+- Delete stage instances, `../../../../../stage-instances/{channel.id}# ` ($x + 32 \leq 51$)
+- Delete store listings, `../../../../../store/listings/{listing.id}#` ($x + 31 \leq 50$)
+- Delete webhooks, `../../../../../webhooks/{webhook.id}#` ($x + 25 \leq 44$)
 
 https://github.com/user-attachments/assets/3aa56f72-2f95-44bf-acfe-182aa2dcfb5e
 

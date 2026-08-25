@@ -81,6 +81,9 @@ You can send a `PUT` as the bot to any endpoint of the Discord API that does not
 - Add role to user: `/guilds/{guild.id}/members/{user.id}/roles/{role.id}`
 - Ban member: `/guilds/{guild.id}/bans/{user.id}`
 - Add member to thread: `/channels/{channel.id}/thread-members/{user.id}`
+- Bulk modify global & guilds application commands: `/applications/{application.id}/[guilds/{guild.id}]/commands` (will delete every existing command)
+- Set voice channel status: `/channels/{channel.id}/voice-status`
+- Add guild discovery subcategory: `/guilds/{guild.id}/discovery-categories/{discovery_category.id}`
 
 Contacting the dev took about two days, as there was no tickets or something, but he fixed it real quick (October 18).
 

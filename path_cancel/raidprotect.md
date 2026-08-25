@@ -18,6 +18,7 @@ As this is a `POST` request, you can also do some other stuff:
 - Create new roles with the default values
 - Crosspost messages in announcements channels
 - Create an invite with the default values
+- End polls
 
 https://github.com/user-attachments/assets/1cda6322-321f-4f08-b981-5082a00eb321
 
