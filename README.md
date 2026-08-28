@@ -6,7 +6,7 @@ I found very nasty bugs across all these apps and I documented them on this repo
 
 By viewing the repo, you should get how it's structured. Every folder's name is a type of bug and their contents are the apps where I found that type of bug. The file contains a explanation on how the bug works. The fix date in every case/writeup follows the `DD/MM/YYYY` format. 
 
-This also can serve as proof that most of the Discord e-gangster or "raiders" that are saying "I can hack Discord, get your IP, raid your server"... or the fuck else, are brainless dumbasses who don't even know how to code properly, because various of these bugs that I found were *really* easy to catch and exploit.
+This also can serve as (another) proof that most of the Discord e-gangsters or "raiders" that are saying "I can hack Discord, get your IP, raid your server"... or the fuck else, are brainless dumbasses who don't even know how to code properly, because various of these bugs that I found were *really* easy to catch and exploit.
 
 ### About exploitation attempts in the wild
 
