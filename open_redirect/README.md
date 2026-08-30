@@ -1,4 +1,4 @@
-Many sites, after some process like logging-in, getting into a tab... etc. sends to you a redirect to the page that you were before starting the process. They often save the page that you were before in attributes like `redirect`, `to`, `go`... etc. On URL that could be represented as:
+Many sites, after some process like logging-in, getting into a tab... etc. sends to you a redirect to the page that you were before starting the process. They often save the page that you were before in attributes like `redirect`, `to`, `go`... etc. On a URL that could be represented as:
 
 `/login?redirect=/dashboard`
 
