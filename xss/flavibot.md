@@ -9,4 +9,4 @@ As Circle, the backend didn't verify the `redirect` parameter saved on the first
 
 ![owo](assets/flavibot.png)
 
-I reported it and the dev told me that this was only happening on Firefox. I think that guy was a *bit wrong* about this because I tested with a friend the Circle bug and it was working on browsers like Safari and Chrome. But I don't know if the frontend does something only on Firefox, so well.
+I reported it and the dev told me that this was only happening on Firefox. I think that the guy was a *bit wrong* about this because I tested with a friend the Circle bug and it was working on browsers like Safari and Chrome. But I don't know if the frontend does something only on Firefox, so well.
