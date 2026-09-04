@@ -1,6 +1,6 @@
 ## My Discord ecosystem hacking adventures.
 
-Since 2024, after a short series of videos made by the youtuber [No Text To Speech](https://www.youtube.com/@NoTextToSpeech) with [xyzeva](https://eva.ac/) as collaborator, I decided to go and hunt bugs on across all the bots and popular apps/websites on the Discord community, specially these one that are widely recommended by many users.
+Since 2024, after a short series of videos made by the youtuber [No Text To Speech](https://www.youtube.com/@NoTextToSpeech) with [xyzeva](https://eva.ac/) as collaborator, I decided to go and hunt bugs across all the bots and popular apps/websites on the Discord community, specially these one that are widely recommended by many users.
 
 I found very nasty bugs across all these apps and I documented them on this repository, moving away from [my blog](https://vzon.moe/blog) as very few people visits it (and also, the original language of the posts was spanish, making it a bit more difficult getting known).
 
